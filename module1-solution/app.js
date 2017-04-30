@@ -16,7 +16,8 @@
       var itemsCount = 0;
 
       itemsArray.forEach(function (item){
-        if(item != null && item != "" && item != " "){ // NOT considering empty items
+        item = item.trim();
+        if(item != null && item != ""){ // NOT considering empty items
           itemsCount++;
         }
       });
